@@ -19,6 +19,7 @@ ttr:Allied
 	rdf:type tto:Movie ;
 	tto:length "90"^^xsd:decimal ;
 	tto:performedby tto:BradPitt;
+	tto:performedby tto:AngelinaJolie;
 	.
 
 ttr:Safe

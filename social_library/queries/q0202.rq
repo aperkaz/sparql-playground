@@ -1,0 +1,12 @@
+#title:Select all the movies from BradPitt
+#tags:1 graph pattern,1 variable
+#img:cartoon-female
+#color:ex-blue
+    
+SELECT *
+	WHERE {
+	  ?movie a tto:Movie ;
+  	  tto:performedby tto:BradPitt .
+}
+
+# The ; makes repeat the subject of the query tripple on the next line
