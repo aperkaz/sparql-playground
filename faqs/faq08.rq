@@ -1,0 +1,11 @@
+#title:Which classes use a particular property?
+#comment:In this example we see which classes uses dbp:name
+    
+SELECT DISTINCT ?class
+WHERE {
+    ?subject dbp:name ?o .
+	?subject a ?class .
+}
+
+# It is a good practice to include rdfs:label, rdfs:comment or 
+# rdfs:domain to describe data

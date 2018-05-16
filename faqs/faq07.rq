@@ -1,0 +1,7 @@
+#title:What properties are used?
+#comment:Includes properties in use in the dataset (even if they are not "declared" in this dataset see FAQ6).
+    
+SELECT DISTINCT ?property
+WHERE
+{ ?s ?property ?o . }
+LIMIT 50

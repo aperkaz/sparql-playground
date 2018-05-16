@@ -1,0 +1,8 @@
+#title:AND join (default) with shorthand
+#color:ex-red 
+SELECT *
+WHERE
+{
+	?taxon a up:Taxon ;
+	       up:scientificName ?name .
+}

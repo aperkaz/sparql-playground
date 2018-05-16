@@ -1,0 +1,10 @@
+#title:Which classes are declared in the dataset?
+#comment:There are 2 common ways of defining classes (using rdfs or owl).
+#comment:You could say a ?class is connected by rdf:type = a to rdfs:Class or or you could say a ?class is a owl:Class. 
+    
+SELECT distinct ?class
+WHERE {
+    ?class a rdfs:Class
+    #you may want to replace rdfs:Class with owl:Class
+}
+order by ?class

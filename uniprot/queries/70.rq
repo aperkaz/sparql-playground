@@ -1,0 +1,8 @@
+#title:countint results
+#color:ex-red 
+SELECT (count(?subject) as ?numberOfTaxonsWithLongName)
+WHERE {
+    ?taxon a up:Taxon ;
+    	up:scientificName ?name .
+    FILTER (strlen(?name) > 40)
+}

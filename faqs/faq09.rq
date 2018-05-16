@@ -1,0 +1,5 @@
+#title:How often is a property used
+#comment:In this example we see how often is the property dbp:name used
+
+SELECT (COUNT(?o) AS ?totalNumberOfNames)
+WHERE { ?s dbp:name ?o }
